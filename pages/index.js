@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { Button } from '../components/Button'
-import { NavBar } from '../components/Navbar'
 import { TagButton } from '../components/TagButton'
 
 export default function Home () {
   return (
     <Fragment>
-      <section className='max-w-5xl mx-auto flex h-24 justify-between items-center'>
+      <section className='px-2 lg:px-0 max-w-5xl mx-auto flex h-24 justify-between items-center'>
         <div className='flex gap-5 '>
           <div className='flex items-center'>
             <span>
