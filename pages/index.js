@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Fragment } from 'react'
+import Image from 'next/image'
 import { Button } from '../components/Button'
 import { TagButton } from '../components/TagButton'
 
@@ -63,10 +64,99 @@ export default function Home () {
       </section>
       <section className='max-w-[67rem] mx-auto h-52 flex'>
         <div className='m-auto grid mt-16 justify-items-center font-primary text-center text-dark-100 font-medium text-[32px] lg:text-5xl leading-7 lg:leading-[60px] tracking-[-0.02em] text-gray-700'>
-        Making your NEAR <br></br> learning easy.
+          Making your NEAR <br></br> learning easy.
         </div>
-      </section> 
-
+      </section>
+      {/* Next section */}
+      <section className='max-w-5xl mx-auto px-10 pt-32 pb-16'>
+        <div className='flex px-10 lg:px-0 flex-col gap-5 lg:flex-row lg:justify-between'>
+          <div className='font-primary text-center lg:text-left my-auto'>
+            <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>
+              Open NEAR wallet
+            </h1>
+            <p className='"text-dark-200 font-normal text-base lg:text-lg lg:leading-6 pt-[6px] text-gray-700 tracking-wide'>
+              <span className='hidden lg:block'>
+                Opening a NEAR wallet is the first step and<br></br> essential
+                part of joining the NEAR community<br></br> as well as starting
+                this course.
+              </span>
+              <span className='block lg:hidden'>
+                Opening a NEAR wallet is the first step and<br></br> essential
+                part of joining the NEAR community<br></br> as well as starting
+                this course.
+              </span>
+            </p>
+            <TagButton
+              name='Create Wallet'
+              className='bg-white text-black border border-black  ml-0 mt-8'
+            />
+          </div>
+          <Image
+            src='/images/image1.png'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={300}
+            height={300}
+          />
+        </div>
+      </section>
+      <section className='max-w-[67rem] mx-auto flex'>
+        <div className='m-auto grid justify-items-center'>
+          <img src='/svgs/sv4.svg' />
+        </div>
+      </section>
+      {/* Next Section */}
+      <section className='max-w-5xl mx-auto px-10 pt-5 pb-16'>
+        <div className='flex px-10 lg:px-0 flex-col gap-5 lg:flex-row lg:justify-between'>
+          <div className='font-primary text-center lg:text-left my-auto'>
+            <Image
+              src='/svgs/sv5.svg'
+              alt='Picture of the author'
+              className='shadow-sm'
+              width={300}
+              height={300}
+            />
+          </div>
+          <div className='flex flex-col gap-5 my-auto lg:mr-16'>
+            <h1 class='text-dark-100 font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em] relative text-gray-700'>
+              Complete the course
+            </h1>
+            <p class='text-dark-200 text-lg tracking-wide leading-6 mt-1 '>
+              In three simple modules, learn:
+            </p>
+            <div className='flex gap-4 items-end'>
+              <Image
+                src='/images/image3.png'
+                alt='Picture of the author'
+                className='shadow-sm'
+                width={30}
+                height={30}
+              />
+              <h4 className='text-end text-lg tracking-wide'> Essential NEAR concepts</h4>
+            </div>
+            <div className='flex gap-4 items-end'>
+            <Image
+                src='/images/image4.png'
+                alt='Picture of the author'
+                className='shadow-sm'
+                width={30}
+                height={30}
+              />
+              <h4 className='text-lg tracking-wide'> How to write smart contracts on NEAR</h4>
+            </div>
+            <div className='flex gap-4 items-end'>
+            <Image
+                src='/images/image5.png'
+                alt='Picture of the author'
+                className='shadow-sm'
+                width={30}
+                height={30}
+              />
+              <h4 className='text-lg tracking-wide'> How to build dapps on the NEAR blockchain</h4>
+            </div>
+          </div>
+        </div>
+      </section>
     </Fragment>
   )
 }
