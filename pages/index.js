@@ -157,6 +157,43 @@ export default function Home () {
           </div>
         </div>
       </section>
+      <section className='max-w-[67rem] mx-auto flex'>
+        <div className='m-auto grid justify-items-center'>
+          <img src='/svgs/sv6.svg' />
+        </div>
+      </section>
+      <section className='max-w-[67rem] mx-auto  flex mt-10'>
+      <div className="text-center mx-auto text-gray-700 w-full">
+        <h1 className="text-dark-100 text-center  font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em] relative">Claim NEAR certificate<div class="hidden lg:block absolute top-0 -mt-[38%] left-[40%]"></div></h1><p className="text-dark-200 font-normal text-lg leading-6 text-center">
+          <span className="hidden lg:block "> Upon course completion, receive the NEAR dev 101<br></br> certificate as an NFT on your NEAR wallet.</span>
+          <span className="block lg:hidden">Upon course completion, receive the NEAR dev 101 certificate as an NFT on your NEAR wallet.</span></p></div>
+      </section>
+      <section className='max-w-[67rem] mx-auto flex justify-center py-16'>
+      <Image
+              src='/images/image6.png'
+              alt='Picture of the author'
+              width={650}
+              height={500}
+            />
+      </section>
+     {/* Next Section */}
+     <section className='max-w-[60rem] mx-auto mt-32 bg-gradient-to-tl from-green-0  via-white'>
+        <div className='flex px-10 lg:px-0 flex-col gap-5 lg:flex-row lg:justify-between'>
+          <div className='text-center lg:text-left my-auto'>
+          <div className="relative text-center lg:text-left">
+            <h1 className="font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em]">NEAR Development 101</h1><button type="button" className="font-normal relative z-10 text-dark-100 text-base leading-[17.6px] mt-4 text-secondary border-secondary  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid border rounded-full px-5 py-3 rounded-4xl inline-block">Start The Course</button><div className="bottom-development w-[1067px] h-[240px] top-[5%] -left-[15%] absolute hidden lg:block"></div></div>
+          </div>
+          <Image
+            src='/images/image7.png'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={390}
+            height={350}
+          />
+        </div>
+      </section>
+      <section className='py-40'>
+      </section>     
     </Fragment>
   )
 }
