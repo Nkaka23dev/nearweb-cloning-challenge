@@ -9,7 +9,11 @@ module.exports = {
       colors: {
         "paragraph":'#676767',
         "header":'#3f4246' 
-      }
+      },
+      fontFamily: {
+        medium: ["Graphic-medium"],
+        regular: ["Graphic-regular"],
+      },
     },
   },
   plugins: [],

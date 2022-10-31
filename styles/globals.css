@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+@font-face {
+    font-family: "Graphic-medium";
+    src: url("/Graphik-Medium-Web.woff2");
+  }
+  @font-face {
+    font-family: "Graphic-regular";
+    src: url("/Graphik-Regular-Web.woff2");
+  }
+  @font-face {
+    font-family: "Graphic-semibold";
+    src: url("/Graphik-Semibold-Web.woff2");
+  }
+
+.bg-grad {
+   
+}

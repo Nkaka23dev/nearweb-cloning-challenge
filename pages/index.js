@@ -9,7 +9,8 @@ export default function Home () {
     <Fragment>
       <section className='fixed top-0 left-0 right-0 bg-white'>
         <div className='max-w-[67rem] mx-auto h-24  px-2 lg:px-0 flex justify-between items-center'>
-          <div className='flex gap-5 '>
+         <Link href="#">
+         <div className='flex gap-5 '>
             <div className='flex items-center'>
               <span>
                 <img className='h-10' src='/svgs/sv1.svg' />
@@ -23,6 +24,7 @@ export default function Home () {
             </span>
             <h1></h1>
           </div>
+         </Link>
           <div className='flex gap-4'>
             <Button className='hidden lg:block' name='Start The Course' />
             <Link href='/wallet'>
@@ -31,9 +33,9 @@ export default function Home () {
           </div>
         </div>
       </section>
-      <section className='max-w-5xl mx-auto h-[25rem] flex flex-col justify-end mt-40'>
+      <section className='max-w-5xl mx-auto h-[23rem] flex flex-col justify-end mt-40'>
         <div className='text-center mt-0'>
-          <h1 className='lg:text-[75px] lg:w-full w-[200px] mx-auto font-semibold text-[36px] text-gray-700'>
+          <h1 className='lg:text-[75px] lg:w-full w-[200px] mx-auto text-[20px] text-gray-700  font-medium  '>
             Get{' '}
             <span
               className='bg-gradient-to-b from-[#9092fb] via-[#86b5ef] to-[#7bdde2] text-transparent
@@ -44,7 +46,7 @@ export default function Home () {
             Certified!
           </h1>
 
-          <h1 className='lg:text-[22px] text-lg tracking-wide  leading-[28px] text-[#676767] mt-10'>
+          <h1 className='lg:text-[22px] text-lg tracking-wide  leading-[28px] text-[#676767] mt-3'>
             We, in NEAR Balkans, know how important it is to have regional and
             local support. Now{' '}
             <br className='hidden lg:block text-[#3f4246]'></br> you can become
@@ -118,10 +120,10 @@ export default function Home () {
             />
           </div>
           <div className='flex flex-col gap-5 my-auto lg:mr-16'>
-            <h1 class='text-dark-100 font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em] relative text-gray-700'>
+            <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>
               Complete the course
             </h1>
-            <p class='text-dark-200 text-lg tracking-wide leading-6 mt-1 '>
+            <p className='text-dark-200 text-lg tracking-wide leading-6 mt-1 '>
               In three simple modules, learn:
             </p>
             <div className='flex gap-4 items-end'>
@@ -132,27 +134,36 @@ export default function Home () {
                 width={30}
                 height={30}
               />
-              <h4 className='text-end text-lg tracking-wide'> Essential NEAR concepts</h4>
+              <h4 className='text-end text-lg tracking-wide'>
+                {' '}
+                Essential NEAR concepts
+              </h4>
             </div>
             <div className='flex gap-4 items-end'>
-            <Image
+              <Image
                 src='/images/image4.png'
                 alt='Picture of the author'
                 className='shadow-sm'
                 width={30}
                 height={30}
               />
-              <h4 className='text-lg tracking-wide'> How to write smart contracts on NEAR</h4>
+              <h4 className='text-lg tracking-wide'>
+                {' '}
+                How to write smart contracts on NEAR
+              </h4>
             </div>
             <div className='flex gap-4 items-end'>
-            <Image
+              <Image
                 src='/images/image5.png'
                 alt='Picture of the author'
                 className='shadow-sm'
                 width={30}
                 height={30}
               />
-              <h4 className='text-lg tracking-wide'> How to build dapps on the NEAR blockchain</h4>
+              <h4 className='text-lg tracking-wide'>
+                {' '}
+                How to build dapps on the NEAR blockchain
+              </h4>
             </div>
           </div>
         </div>
@@ -163,25 +174,43 @@ export default function Home () {
         </div>
       </section>
       <section className='max-w-[67rem] mx-auto  flex mt-10'>
-      <div className="text-center mx-auto text-gray-700 w-full">
-        <h1 className="text-dark-100 text-center  font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em] relative">Claim NEAR certificate<div class="hidden lg:block absolute top-0 -mt-[38%] left-[40%]"></div></h1><p className="text-dark-200 font-normal text-lg leading-6 text-center">
-          <span className="hidden lg:block "> Upon course completion, receive the NEAR dev 101<br></br> certificate as an NFT on your NEAR wallet.</span>
-          <span className="block lg:hidden">Upon course completion, receive the NEAR dev 101 certificate as an NFT on your NEAR wallet.</span></p></div>
+        <div className='text-center mx-auto text-gray-700 w-full'>
+          <h1 className='text-dark-100 text-center  font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em]'>
+            Claim NEAR certificate
+            <div class='hidden lg:block absolute top-0 -mt-[38%] left-[40%]'></div>
+          </h1>
+          <p className='text-dark-200 font-normal text-lg leading-6 text-center'>
+            <span className='hidden lg:block '>
+              {' '}
+              Upon course completion, receive the NEAR dev 101<br></br>{' '}
+              certificate as an NFT on your NEAR wallet.
+            </span>
+            <span className='block lg:hidden'>
+              Upon course completion, receive the NEAR dev 101 certificate as an
+              NFT on your NEAR wallet.
+            </span>
+          </p>
+        </div>
       </section>
       <section className='max-w-[67rem] mx-auto flex justify-center py-16'>
-      <Image
-              src='/images/image6.png'
-              alt='Picture of the author'
-              width={650}
-              height={500}
-            />
+        <Image
+          src='/images/image6.png'
+          alt='Picture of the author'
+          width={650}
+          height={500}
+        />
       </section>
-     {/* Next Section */}
-     <section className='max-w-[60rem] mx-auto mt-32 bg-gradient-to-tl from-green-0  via-white'>
+      {/* Next Section */}
+      <section className='max-w-[60rem] mx-auto mt-32 bg-grad'>
         <div className='flex px-10 lg:px-0 flex-col gap-5 lg:flex-row lg:justify-between'>
           <div className='text-center lg:text-left my-auto'>
-          <div className="relative text-center lg:text-left">
-            <h1 className="font-medium text-2xl lg:text-4xl leading-[44px] tracking-[-0.02em]">NEAR Development 101</h1><button type="button" className="font-normal relative z-10 text-dark-100 text-base leading-[17.6px] mt-4 text-secondary border-secondary  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid border rounded-full px-5 py-3 rounded-4xl inline-block">Start The Course</button><div className="bottom-development w-[1067px] h-[240px] top-[5%] -left-[15%] absolute hidden lg:block"></div></div>
+           
+          <div className='flex flex-col gap-5'>
+            <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>NEAR Development 101</h1>
+            <Button className="border border-red-500" name="Start the course"/>
+          </div>
+
+
           </div>
           <Image
             src='/images/image7.png'
@@ -192,8 +221,93 @@ export default function Home () {
           />
         </div>
       </section>
-      <section className='py-40'>
-      </section>     
+      {/*Next Section  */}
+      <section className='max-w-[50rem] mx-auto  flex py-20  flex-col gap-10'>
+        <div className='mx-auto text-lg cursor-pointer'>
+          <h1 className='text-xl'>
+            Visit{' '}
+            <span className='font-bold text-gray-700 text-center cursor-pointer'>nearbalkans.org </span>{' '}
+            and make sure to follow us on our social and community channels!
+          </h1>
+        </div>
+        {/* second flex */}
+        <div className='mx-auto text-lg cursor-pointer'>
+          <div className='flex gap-16'>
+
+            <div className='flex items-center'>
+              <span className='border-r-2 px-16'>
+                <img className='h-10' src='/svgs/sv2.svg' />
+              </span>
+            </div>
+
+            <div className='flex gap-5 items-center'>
+            <Image
+            src='/svgs/sv7.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          /> 
+           <Image
+            src='/svgs/sv8.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          />
+            <Image
+            src='/svgs/sv9.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          />
+            <Image
+            src='/svgs/sv10.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={15}
+            height={15}
+          />
+           <Image
+            src='/svgs/sv11.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          />
+           <Image
+            src='/svgs/sv13.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          />
+            <Image
+            src='/svgs/sv12.svg'
+            alt='Picture of the author'
+            className='shadow-sm'
+            width={30}
+            height={30}
+          />
+            </div>
+          </div>
+        </div>
+        {/* second flex */}
+        <div className='flex justify-between text-lg cursor-pointer'>
+          <h1 className='text-center'>NEAR Balkans <br></br> 2022</h1>
+          <h1  className='text-center'>info@nearbalkans.org</h1>
+          <h1  className='text-center'>Privacy <br></br> Policy</h1>
+          <h1  className='text-center'>Cookie <br></br> Policy</h1>
+          <h1  className='text-center'>Terms & <br></br> Policy</h1>
+        </div>
+        {/* Third flex */}
+        <div className='text-lg cursor-pointer'>
+          <h1 className='text-lg text-center'>NEAR Balkans Hub: Bosnia & Herzegovina, Bulgaria, Croatia, Montenegro, North Macedonia, <br></br> Serbia, and Slovenia</h1>
+        </div>
+      </section>
+
+      
     </Fragment>
   )
 }
