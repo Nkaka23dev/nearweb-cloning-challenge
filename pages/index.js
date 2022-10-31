@@ -9,7 +9,7 @@ export default function Home () {
     <Fragment>
       <section className='fixed top-0 left-0 right-0 bg-white'>
         <div className='max-w-[67rem] mx-auto h-24  px-2 lg:px-0 flex justify-between items-center'>
-         <Link href="#">
+         <Link href="/nextPage">
          <div className='flex gap-5 '>
             <div className='flex items-center'>
               <span>
@@ -35,7 +35,7 @@ export default function Home () {
       </section>
       <section className='max-w-5xl mx-auto h-[23rem] flex flex-col justify-end mt-40'>
         <div className='text-center mt-0'>
-          <h1 className='lg:text-[75px] lg:w-full w-[200px] mx-auto text-[20px] text-gray-700  font-medium  '>
+          <h1 className='lg:text-[75px] lg:w-full w-[200px] mx-auto text-[36px] text-gray-700  font-medium  '>
             Get{' '}
             <span
               className='bg-gradient-to-b from-[#9092fb] via-[#86b5ef] to-[#7bdde2] text-transparent
@@ -45,7 +45,7 @@ export default function Home () {
             </span>{' '}
             Certified!
           </h1>
-
+         
           <h1 className='lg:text-[22px] text-lg tracking-wide  leading-[28px] text-[#676767] mt-3'>
             We, in NEAR Balkans, know how important it is to have regional and
             local support. Now{' '}
@@ -88,10 +88,7 @@ export default function Home () {
                 this course.
               </span>
             </p>
-            <TagButton
-              name='Create Wallet'
-              className='bg-white text-black border border-black  ml-0 mt-8'
-            />
+            <button type="button" className="font-normal text-dark-100 text-base mt-8  border border-gray-600 px-6  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid rounded-full py-3 rounded-4xl inline-block">Create wallet</button>
           </div>
           <Image
             src='/images/image1.png'
@@ -207,7 +204,7 @@ export default function Home () {
            
           <div className='flex flex-col gap-5'>
             <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>NEAR Development 101</h1>
-            <Button className="border border-red-500" name="Start the course"/>
+            <button type="button" className="font-normal text-dark-100 text-base mt-1 border border-gray-200 px-6  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid rounded-full py-3 rounded-4xl inline-block">Create wallet</button>
           </div>
 
 
