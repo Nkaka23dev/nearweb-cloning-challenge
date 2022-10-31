@@ -35,7 +35,7 @@ export default function Home () {
         </div>
       </section>
       <section className='max-w-5xl mx-auto h-[23rem] flex flex-col justify-end mt-40 relative overflow-hidden'>
-      <div className='hero-background-color -top-80 block lg:hidden absolute w-full h-96 border-b'></div>
+      <div className='hero-background-color -top-72 block lg:hidden absolute w-full h-96 '></div>
         <div className='text-center mt-0'>
           <h1 className='lg:text-[75px] lg:w-full w-[200px] mx-auto text-[36px] text-gray-700  font-medium  '>
             Get{' '}
@@ -48,7 +48,7 @@ export default function Home () {
             Certified!
           </h1>
          
-          <h1 className= 'max-w-md lg:max-w-full lg:text-[22px] text-lg tracking-wide leading-[28px] text-[#676767] mt-3'>
+          <h1 className= 'max-w-md lg:max-w-full lg:text-[22px] text-lg tracking-wide leading-[28px] text-[#676767] mt-3 mx-auto'>
             We, in NEAR Balkans, know how important it is to have regional and
             local support. Now{' '}
             <br className='hidden lg:block text-[#3f4246]'></br> you can become
@@ -84,7 +84,7 @@ export default function Home () {
                 part of joining the NEAR community<br></br> as well as starting
                 this course.
               </span>
-              <span className='block max-w-md lg:hidden'>
+              <span className='block max-w-md lg:hidden mx-auto'>
                 Opening a NEAR wallet is the first step andessential
                 part of joining the NEAR community as well as starting
                 this course.
@@ -96,14 +96,14 @@ export default function Home () {
           <Image
             src='/images/image1.png'
             alt='Picture of the author'
-            className='shadow-sm '
+            className='shadow-sm mx-auto'
             width={300}
             height={300}
           />
           
         </div>
       </section>
-      <section className='max-w-[67rem] mx-auto flex'>
+      <section className='max-w-[67rem] hidden mx-auto lg:flex'>
         <div className='m-auto grid justify-items-center'>
           <img src='/svgs/sv4.svg' />
         </div>
@@ -115,23 +115,23 @@ export default function Home () {
             <Image
               src='/svgs/sv5.svg'
               alt='Picture of the author'
-              className='shadow-sm'
+              className='shadow-sm mx-auto'
               width={300}
               height={300}
             />
           </div>
-          <div className='flex flex-col gap-5 my-auto lg:mr-16'>
+          <div className='flex flex-col mx-auto gap-5 my-auto  lg:mr-16'>
             <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>
               Complete the course
             </h1>
             <p className='text-dark-200 text-lg tracking-wide leading-6 mt-1 '>
               In three simple modules, learn:
             </p>
-            <div className='flex gap-4 items-end'>
+            <div className='flex flex-row gap-4  lg:items-end'>
               <Image
                 src='/images/image3.png'
                 alt='Picture of the author'
-                className='shadow-sm'
+                className='shadow-sm '
                 width={30}
                 height={30}
               />
@@ -169,7 +169,7 @@ export default function Home () {
           </div>
         </div>
       </section>
-      <section className='max-w-[67rem] mx-auto flex'>
+      <section className='max-w-[67rem] hidden mx-auto lg:flex'>
         <div className='m-auto grid justify-items-center'>
           <img src='/svgs/sv6.svg' />
         </div>
@@ -206,25 +206,30 @@ export default function Home () {
         <div className='bottom-development absolute w-full h-96 border-b'></div>
         <div className='flex px-10 lg:px-0 flex-col gap-5 lg:flex-row lg:justify-between'>
           <div className='text-center lg:text-left my-auto'>
-           
-          <div className='flex flex-col gap-5'>
+          <Image
+            src='/images/image7.png'
+            alt='Picture of the author'
+            className='shadow-sm mx-auto block lg:hidden'
+            width={200}
+            height={200}
+          />
+          <div className='flex flex-col justify-center lg:justify-start gap-5'>
             <h1 className='text-dark-100 font-medium text-2xl text-center lg:text-left lg:text-4xl leading-[44px] tracking-wide text-gray-700'>NEAR Development 101</h1>
-            <button type="button" className="font-normal text-dark-100 text-base mt-1 border border-gray-200 px-6  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid rounded-full py-3 rounded-4xl inline-block">Create wallet</button>
+            <button type="button" className="font-normal text-dark-100 text-base -mt-4 lg:mt-1 border border-gray-200 px-6  focus:outline-none cursor-pointer leading-4 transition-250ms w-fit border-accent border-solid rounded-full py-3 rounded-4xl mx-auto lg:mx-0 inline-block">Create wallet</button>
           </div>
-
 
           </div>
           <Image
             src='/images/image7.png'
             alt='Picture of the author'
-            className='shadow-sm'
+            className='shadow-sm mx-auto hidden lg:block'
             width={390}
             height={350}
           />
         </div>
       </section>
       {/*Next Section  */}
-      <section className='max-w-[50rem] mx-auto flex py-20  flex-col gap-10'>
+      <section className='max-w-[50rem] mx-auto flex py-20 px-10 lg:px-0 flex-col gap-10'>
         <div className='mx-auto text-lg cursor-pointer'>
           <h1 className='text-xl text-center'>
             Visit{' '}
@@ -237,12 +242,12 @@ export default function Home () {
           <div className='flex flex-col lg:flex-row gap-16'>
 
             <div className='flex items-center'>
-              <span className='border-r-2 px-16'>
+              <span className='mx-auto lg:border-r-2 lg:px-16'>
                 <img className='h-10' src='/svgs/sv2.svg' />
               </span>
             </div>
 
-            <div className='flex gap-5 items-center'>
+            <div className='flex gap-10 lg:gap-5 items-center'>
             <Image
             src='/svgs/sv7.svg'
             alt='Picture of the author'
@@ -308,8 +313,6 @@ export default function Home () {
           <h1 className='text-lg text-center'>NEAR Balkans Hub: Bosnia & Herzegovina, Bulgaria, Croatia, Montenegro, North Macedonia, <br></br> Serbia, and Slovenia</h1>
         </div>
       </section>
-
-      
     </Fragment>
   )
 }
